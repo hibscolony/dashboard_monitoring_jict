@@ -1,7 +1,6 @@
 
 from __future__ import annotations
 
-import base64
 from html import escape
 from pathlib import Path
 
@@ -24,7 +23,6 @@ st.set_page_config(
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_PATH = BASE_DIR / "data" / "produksi_dummy.csv"
-LOGO_PATH = BASE_DIR / "assets" / "jict_logo.webp"
 
 NAVY = "#082746"
 NAVY_LIGHT = "#123E68"
@@ -37,19 +35,6 @@ YELLOW = "#E2A72E"
 PAGE_BG = "#F4F7FB"
 CARD_BORDER = "#DDE6EF"
 MUTED = "#677587"
-
-def load_logo_data_uri(path: Path) -> str:
-    if not path.exists():
-        return ""
-
-    encoded = base64.b64encode(
-        path.read_bytes()
-    ).decode("utf-8")
-
-    return f"data:image/webp;base64,{encoded}"
-
-
-LOGO_DATA_URI = load_logo_data_uri(LOGO_PATH)
 
 
 # ============================================================
@@ -113,24 +98,6 @@ st.markdown(
             gap: 20px;
             position: relative;
             z-index: 1;
-        }}
-
-        .brand-logo-wrap {{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 150px;
-            min-width: 150px;
-        }}
-
-        .brand-logo {{
-            width: 150px;
-            max-height: 85px;
-            object-fit: contain;
-            display: block;
-            filter: drop-shadow(
-                0 5px 10px rgba(0, 0, 0, 0.18)
-            );
         }}
 
         .brand-mark {{
@@ -387,6 +354,21 @@ st.markdown(
             background: #FFF0CE;
         }}
 
+        .validation-approved {{
+            color: #0C7650;
+            background: #DDF4E9;
+        }}
+
+        .validation-pending {{
+            color: #9A6412;
+            background: #FFF0CE;
+        }}
+
+        .validation-returned {{
+            color: #B23237;
+            background: #FBE1E3;
+        }}
+
         .info-box {{
             background: linear-gradient(135deg, #EAF4FB, #F5FAFE);
             border: 1px solid #CFE1EF;
@@ -572,6 +554,33 @@ def dominant_value(series: pd.Series) -> str:
     return str(mode.iloc[0])
 
 
+def aggregate_supervisor_validation(series: pd.Series) -> str:
+    """Meringkas validasi atasan untuk setiap operator."""
+    statuses = set(
+        series.dropna()
+        .astype(str)
+        .str.strip()
+        .tolist()
+    )
+
+    # Jika ada satu saja data dikembalikan, operator ditandai RETURNED.
+    if "Returned" in statuses:
+        return "RETURNED"
+
+    # Jika masih ada proses yang belum selesai, statusnya PENDING.
+    if (
+        "Pending" in statuses
+        or "Waiting Foreman" in statuses
+    ):
+        return "PENDING"
+
+    # APPROVED hanya jika seluruh data telah disetujui supervisor.
+    if statuses and statuses == {"Approved"}:
+        return "APPROVED"
+
+    return "PENDING"
+
+
 def operator_summary(data: pd.DataFrame) -> pd.DataFrame:
     summary = (
         data.groupby("operator_name", as_index=False)
@@ -581,6 +590,10 @@ def operator_summary(data: pd.DataFrame) -> pd.DataFrame:
             target_boxes=("target_boxes", "sum"),
             productive_hours=("productive_hours", "sum"),
             shift_hours=("shift_hours", "sum"),
+            supervisor_validation=(
+                "supervisor_status",
+                aggregate_supervisor_validation,
+            ),
             final_count=("final_status", lambda x: (x == "FINAL").sum()),
             total_records=("record_id", "count"),
         )
@@ -671,6 +684,24 @@ def achievement_badge(value: float) -> str:
     )
 
 
+def supervisor_validation_badge(status: str) -> str:
+    css_map = {
+        "APPROVED": "validation-approved",
+        "PENDING": "validation-pending",
+        "RETURNED": "validation-returned",
+    }
+
+    css_class = css_map.get(
+        status,
+        "validation-pending",
+    )
+
+    return (
+        f'<span class="status-pill {css_class}">'
+        f'{escape(str(status))}</span>'
+    )
+
+
 def render_operator_table(data: pd.DataFrame) -> None:
     rows = []
 
@@ -684,6 +715,7 @@ def render_operator_table(data: pd.DataFrame) -> None:
             f"<td class='num'>{achievement_badge(row['achievement'])}</td>"
             f"<td class='num'>{row['productive_hours']:,.1f}</td>"
             f"<td class='num'>{row['utilization']:,.1f}%</td>"
+            f"<td>{supervisor_validation_badge(row['supervisor_validation'])}</td>"
             f"<td>{status_badge(row['final_status'])}</td>"
             "</tr>"
         )
@@ -705,6 +737,7 @@ def render_operator_table(data: pd.DataFrame) -> None:
                         <th class="num">Pencapaian</th>
                         <th class="num">Jam Produktif</th>
                         <th class="num">Utilisasi</th>
+                        <th>Validasi Atasan</th>
                         <th>Status Final</th>
                     </tr>
                 </thead>
@@ -766,14 +799,14 @@ def kpi_card(
     icon: str,
     accent: str,
 ) -> str:
-    return (
-        f'<div class="kpi-card" style="--accent:{accent};">'
-        f'<div class="kpi-icon">{icon}</div>'
-        f'<div class="kpi-label">{label}</div>'
-        f'<div class="kpi-value">{value}</div>'
-        f'<div class="kpi-sub">{subtitle}</div>'
-        f'</div>'
-    )
+    return f"""
+    <div class="kpi-card" style="--accent:{accent};">
+        <div class="kpi-icon">{icon}</div>
+        <div class="kpi-label">{label}</div>
+        <div class="kpi-value">{value}</div>
+        <div class="kpi-sub">{subtitle}</div>
+    </div>
+    """
 
 
 def chart_layout(
