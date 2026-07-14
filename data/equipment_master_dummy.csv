@@ -1,0 +1,50 @@
+﻿equipment_type,equipment_id,baseline_per_hour,production_unit
+Quay Crane,QC-01,28,box
+Quay Crane,QC-02,28,box
+Quay Crane,QC-03,28,box
+Quay Crane,QC-04,28,box
+Quay Crane,QC-05,28,box
+Quay Crane,QC-06,28,box
+Quay Crane,QC-07,28,box
+Quay Crane,QC-08,28,box
+RTGC,RTG-01,20,box
+RTGC,RTG-02,20,box
+RTGC,RTG-03,20,box
+RTGC,RTG-04,20,box
+RTGC,RTG-05,20,box
+RTGC,RTG-06,20,box
+RTGC,RTG-07,20,box
+RTGC,RTG-08,20,box
+RTGC,RTG-09,20,box
+RTGC,RTG-10,20,box
+RTGC,RTG-11,20,box
+RTGC,RTG-12,20,box
+Reach Stacker,RS-01,14,box
+Reach Stacker,RS-02,14,box
+Reach Stacker,RS-03,14,box
+Reach Stacker,RS-04,14,box
+Reach Stacker,RS-05,14,box
+Forklift,FL-01,10,box
+Forklift,FL-02,10,box
+Forklift,FL-03,10,box
+Forklift,FL-04,10,box
+Forklift,FL-05,10,box
+Forklift,FL-06,10,box
+Head Truck,HT-01,10,move
+Head Truck,HT-02,10,move
+Head Truck,HT-03,10,move
+Head Truck,HT-04,10,move
+Head Truck,HT-05,10,move
+Head Truck,HT-06,10,move
+Head Truck,HT-07,10,move
+Head Truck,HT-08,10,move
+Head Truck,HT-09,10,move
+Head Truck,HT-10,10,move
+Head Truck,HT-11,10,move
+Head Truck,HT-12,10,move
+Head Truck,HT-13,10,move
+Head Truck,HT-14,10,move
+Head Truck,HT-15,10,move
+Head Truck,HT-16,10,move
+Head Truck,HT-17,10,move
+Head Truck,HT-18,10,move

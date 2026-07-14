@@ -1,0 +1,121 @@
+﻿audit_id,record_id,changed_at,field_changed,old_value,new_value,changed_by,change_reason,approval_status
+AUD-00001,TRX-0000616,2026-01-16 13:00:00,actual_production,20,64,Foreman 01,Perbaikan reason code,Approved
+AUD-00002,TRX-0000567,2026-01-14 21:00:00,break_hours,98,89,Foreman 01,Validasi kondisi lapangan,Pending
+AUD-00003,TRX-0000373,2026-01-10 12:00:00,actual_production,90,12,Foreman 02,Rekonsiliasi log alat,Approved
+AUD-00004,TRX-0001181,2026-01-29 17:00:00,downtime_minutes,10,57,Operations Admin,Koreksi input,Approved
+AUD-00005,TRX-0000240,2026-01-06 11:00:00,downtime_minutes,57,79,Foreman 02,Validasi kondisi lapangan,Pending
+AUD-00006,TRX-0000010,2026-01-01 21:00:00,downtime_minutes,0,82,Supervisor 01,Rekonsiliasi log alat,Approved
+AUD-00007,TRX-0001146,2026-01-29 12:00:00,downtime_reason,45,46,Foreman 01,Koreksi input,Approved
+AUD-00008,TRX-0000814,2026-01-21 09:00:00,actual_production,15,99,Supervisor 01,Koreksi input,Approved
+AUD-00009,TRX-0000915,2026-01-23 21:00:00,downtime_minutes,74,32,Operations Admin,Validasi kondisi lapangan,Returned
+AUD-00010,TRX-0001048,2026-01-26 22:00:00,downtime_minutes,7,44,Foreman 02,Perbaikan reason code,Approved
+AUD-00011,TRX-0000504,2026-01-13 13:00:00,downtime_reason,90,82,Foreman 02,Rekonsiliasi log alat,Approved
+AUD-00012,TRX-0000645,2026-01-16 21:00:00,downtime_reason,23,43,Operations Admin,Koreksi input,Pending
+AUD-00013,DUP-0000009,2026-01-18 11:00:00,break_hours,26,34,Supervisor 01,Validasi kondisi lapangan,Approved
+AUD-00014,TRX-0000517,2026-01-13 12:00:00,actual_production,88,55,Foreman 02,Koreksi input,Approved
+AUD-00015,TRX-0000727,2026-01-18 16:00:00,break_hours,90,62,Foreman 01,Koreksi input,Approved
+AUD-00016,TRX-0000967,2026-01-24 17:00:00,downtime_minutes,9,96,Operations Admin,Validasi kondisi lapangan,Approved
+AUD-00017,TRX-0000027,2026-01-01 13:00:00,downtime_minutes,10,61,Supervisor 01,Validasi kondisi lapangan,Approved
+AUD-00018,TRX-0000666,2026-01-17 19:00:00,downtime_reason,85,18,Foreman 01,Koreksi input,Approved
+AUD-00019,TRX-0000890,2026-01-22 19:00:00,actual_production,97,5,Supervisor 01,Koreksi input,Pending
+AUD-00020,TRX-0000061,2026-01-02 09:00:00,break_hours,48,96,Operations Admin,Koreksi input,Approved
+AUD-00021,TRX-0001187,2026-01-29 22:00:00,downtime_minutes,16,42,Operations Admin,Validasi kondisi lapangan,Approved
+AUD-00022,TRX-0000752,2026-01-19 10:00:00,break_hours,15,20,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00023,TRX-0000395,2026-01-10 15:00:00,actual_production,26,22,Foreman 02,Validasi kondisi lapangan,Approved
+AUD-00024,TRX-0000678,2026-01-17 14:00:00,break_hours,68,10,Operations Admin,Koreksi input,Approved
+AUD-00025,TRX-0001190,2026-01-30 14:00:00,downtime_minutes,9,19,Operations Admin,Perbaikan reason code,Approved
+AUD-00026,TRX-0001006,2026-01-25 09:00:00,downtime_reason,64,78,Supervisor 01,Koreksi input,Approved
+AUD-00027,TRX-0000238,2026-01-06 13:00:00,break_hours,80,65,Foreman 02,Perbaikan reason code,Approved
+AUD-00028,TRX-0001206,2026-01-30 08:00:00,actual_production,14,59,Operations Admin,Perbaikan reason code,Approved
+AUD-00029,TRX-0000216,2026-01-06 22:00:00,downtime_minutes,98,1,Supervisor 01,Rekonsiliasi log alat,Approved
+AUD-00030,TRX-0000563,2026-01-14 10:00:00,break_hours,98,67,Supervisor 01,Perbaikan reason code,Approved
+AUD-00031,TRX-0000999,2026-01-25 15:00:00,actual_production,29,96,Operations Admin,Validasi kondisi lapangan,Approved
+AUD-00032,TRX-0000478,2026-01-12 11:00:00,actual_production,11,92,Foreman 02,Perbaikan reason code,Approved
+AUD-00033,TRX-0000917,2026-01-23 10:00:00,downtime_reason,32,39,Supervisor 01,Koreksi input,Approved
+AUD-00034,TRX-0000099,2026-01-03 13:00:00,actual_production,25,60,Foreman 01,Koreksi input,Approved
+AUD-00035,TRX-0000550,2026-01-14 22:00:00,break_hours,27,29,Supervisor 01,Perbaikan reason code,Approved
+AUD-00036,TRX-0000775,2026-01-20 15:00:00,break_hours,92,88,Supervisor 01,Perbaikan reason code,Approved
+AUD-00037,TRX-0000062,2026-01-02 22:00:00,actual_production,15,91,Operations Admin,Validasi kondisi lapangan,Returned
+AUD-00038,TRX-0000060,2026-01-02 20:00:00,actual_production,31,22,Foreman 02,Rekonsiliasi log alat,Approved
+AUD-00039,TRX-0000454,2026-01-12 14:00:00,break_hours,78,48,Operations Admin,Rekonsiliasi log alat,Approved
+AUD-00040,TRX-0000490,2026-01-13 21:00:00,downtime_reason,5,23,Supervisor 01,Rekonsiliasi log alat,Approved
+AUD-00041,TRX-0000566,2026-01-14 13:00:00,break_hours,6,61,Foreman 01,Rekonsiliasi log alat,Approved
+AUD-00042,TRX-0000523,2026-01-13 15:00:00,break_hours,30,29,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00043,TRX-0000662,2026-01-17 18:00:00,downtime_minutes,96,69,Foreman 01,Perbaikan reason code,Returned
+AUD-00044,TRX-0000361,2026-01-09 16:00:00,downtime_minutes,83,98,Foreman 02,Rekonsiliasi log alat,Approved
+AUD-00045,TRX-0000721,2026-01-18 20:00:00,downtime_reason,92,87,Supervisor 01,Perbaikan reason code,Pending
+AUD-00046,TRX-0000832,2026-01-21 10:00:00,downtime_reason,86,18,Operations Admin,Koreksi input,Approved
+AUD-00047,TRX-0000900,2026-01-22 15:00:00,downtime_minutes,11,12,Operations Admin,Perbaikan reason code,Approved
+AUD-00048,TRX-0000571,2026-01-15 17:00:00,downtime_minutes,40,81,Supervisor 01,Validasi kondisi lapangan,Returned
+AUD-00049,TRX-0000339,2026-01-09 12:00:00,downtime_minutes,52,8,Foreman 02,Validasi kondisi lapangan,Pending
+AUD-00050,TRX-0000568,2026-01-14 21:00:00,downtime_reason,16,40,Supervisor 01,Rekonsiliasi log alat,Approved
+AUD-00051,TRX-0000375,2026-01-10 12:00:00,downtime_minutes,99,99,Foreman 02,Rekonsiliasi log alat,Pending
+AUD-00052,TRX-0000714,2026-01-18 12:00:00,downtime_minutes,60,44,Foreman 01,Rekonsiliasi log alat,Approved
+AUD-00053,TRX-0000700,2026-01-18 12:00:00,actual_production,85,0,Supervisor 01,Perbaikan reason code,Approved
+AUD-00054,TRX-0000933,2026-01-23 18:00:00,break_hours,25,97,Operations Admin,Koreksi input,Approved
+AUD-00055,TRX-0000542,2026-01-14 09:00:00,downtime_reason,71,70,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00056,TRX-0000138,2026-01-04 10:00:00,break_hours,10,33,Foreman 01,Perbaikan reason code,Approved
+AUD-00057,TRX-0000537,2026-01-14 19:00:00,break_hours,2,61,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00058,TRX-0000799,2026-01-20 11:00:00,downtime_reason,64,61,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00059,TRX-0000937,2026-01-24 09:00:00,downtime_minutes,6,55,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00060,TRX-0000675,2026-01-17 11:00:00,downtime_reason,27,96,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00061,TRX-0000562,2026-01-14 13:00:00,downtime_reason,79,78,Foreman 01,Validasi kondisi lapangan,Pending
+AUD-00062,TRX-0000209,2026-01-06 08:00:00,break_hours,49,25,Foreman 02,Perbaikan reason code,Approved
+AUD-00063,TRX-0000112,2026-01-03 20:00:00,actual_production,37,99,Supervisor 01,Validasi kondisi lapangan,Approved
+AUD-00064,TRX-0000898,2026-01-22 09:00:00,actual_production,29,96,Foreman 01,Perbaikan reason code,Approved
+AUD-00065,TRX-0000687,2026-01-17 14:00:00,actual_production,66,4,Foreman 02,Validasi kondisi lapangan,Approved
+AUD-00066,TRX-0000946,2026-01-24 11:00:00,actual_production,95,29,Operations Admin,Perbaikan reason code,Approved
+AUD-00067,TRX-0000817,2026-01-21 12:00:00,downtime_reason,73,61,Foreman 01,Perbaikan reason code,Approved
+AUD-00068,TRX-0000594,2026-01-15 08:00:00,actual_production,35,87,Operations Admin,Koreksi input,Approved
+AUD-00069,TRX-0001022,2026-01-25 22:00:00,actual_production,42,71,Supervisor 01,Perbaikan reason code,Approved
+AUD-00070,TRX-0000630,2026-01-16 22:00:00,downtime_minutes,10,57,Supervisor 01,Validasi kondisi lapangan,Approved
+AUD-00071,TRX-0000053,2026-01-02 09:00:00,break_hours,14,30,Foreman 02,Rekonsiliasi log alat,Approved
+AUD-00072,TRX-0000587,2026-01-15 10:00:00,downtime_minutes,26,9,Foreman 02,Perbaikan reason code,Approved
+AUD-00073,TRX-0000056,2026-01-02 21:00:00,downtime_minutes,38,89,Foreman 02,Koreksi input,Approved
+AUD-00074,TRX-0001002,2026-01-25 14:00:00,downtime_minutes,99,53,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00075,TRX-0000132,2026-01-04 08:00:00,break_hours,87,45,Foreman 02,Validasi kondisi lapangan,Approved
+AUD-00076,TRX-0000143,2026-01-04 10:00:00,downtime_minutes,11,97,Operations Admin,Perbaikan reason code,Pending
+AUD-00077,TRX-0000941,2026-01-24 14:00:00,downtime_minutes,33,16,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00078,TRX-0000195,2026-01-05 16:00:00,break_hours,5,25,Supervisor 01,Validasi kondisi lapangan,Approved
+AUD-00079,TRX-0000919,2026-01-23 17:00:00,downtime_minutes,6,85,Supervisor 01,Validasi kondisi lapangan,Approved
+AUD-00080,TRX-0000573,2026-01-15 10:00:00,downtime_minutes,37,28,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00081,TRX-0000037,2026-01-01 13:00:00,break_hours,95,94,Foreman 01,Perbaikan reason code,Approved
+AUD-00082,TRX-0000442,2026-01-11 11:00:00,downtime_minutes,18,85,Supervisor 01,Perbaikan reason code,Approved
+AUD-00083,TRX-0001015,2026-01-25 16:00:00,downtime_reason,68,9,Foreman 01,Koreksi input,Approved
+AUD-00084,TRX-0000670,2026-01-17 12:00:00,downtime_reason,39,45,Operations Admin,Validasi kondisi lapangan,Pending
+AUD-00085,TRX-0000853,2026-01-21 11:00:00,actual_production,54,75,Foreman 01,Rekonsiliasi log alat,Approved
+AUD-00086,TRX-0000688,2026-01-17 20:00:00,actual_production,86,48,Foreman 01,Koreksi input,Approved
+AUD-00087,TRX-0001115,2026-01-28 16:00:00,break_hours,82,21,Foreman 02,Perbaikan reason code,Pending
+AUD-00088,TRX-0001163,2026-01-29 15:00:00,downtime_minutes,82,4,Foreman 02,Perbaikan reason code,Approved
+AUD-00089,TRX-0001193,2026-01-30 10:00:00,downtime_minutes,41,0,Foreman 01,Perbaikan reason code,Pending
+AUD-00090,TRX-0000034,2026-01-01 09:00:00,downtime_reason,4,17,Supervisor 01,Rekonsiliasi log alat,Approved
+AUD-00091,TRX-0000047,2026-01-02 19:00:00,actual_production,98,26,Foreman 02,Rekonsiliasi log alat,Approved
+AUD-00092,TRX-0000104,2026-01-03 22:00:00,actual_production,99,30,Supervisor 01,Perbaikan reason code,Approved
+AUD-00093,TRX-0000602,2026-01-15 16:00:00,downtime_minutes,85,85,Foreman 01,Koreksi input,Approved
+AUD-00094,TRX-0000298,2026-01-08 08:00:00,break_hours,47,50,Foreman 01,Koreksi input,Approved
+AUD-00095,TRX-0000499,2026-01-13 15:00:00,downtime_reason,28,14,Foreman 01,Rekonsiliasi log alat,Pending
+AUD-00096,TRX-0000050,2026-01-02 12:00:00,downtime_reason,17,8,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00097,TRX-0000074,2026-01-02 08:00:00,downtime_reason,37,13,Operations Admin,Rekonsiliasi log alat,Pending
+AUD-00098,DUP-0000008,2026-01-11 10:00:00,break_hours,33,31,Foreman 02,Koreksi input,Approved
+AUD-00099,TRX-0000876,2026-01-22 15:00:00,break_hours,27,73,Foreman 02,Validasi kondisi lapangan,Approved
+AUD-00100,TRX-0000759,2026-01-19 14:00:00,actual_production,95,4,Supervisor 01,Perbaikan reason code,Pending
+AUD-00101,TRX-0000486,2026-01-12 16:00:00,downtime_reason,65,40,Foreman 01,Rekonsiliasi log alat,Pending
+AUD-00102,TRX-0000779,2026-01-20 18:00:00,downtime_reason,22,44,Supervisor 01,Rekonsiliasi log alat,Approved
+AUD-00103,TRX-0000993,2026-01-25 11:00:00,actual_production,63,14,Supervisor 01,Rekonsiliasi log alat,Approved
+AUD-00104,TRX-0000717,2026-01-18 12:00:00,break_hours,70,5,Operations Admin,Rekonsiliasi log alat,Approved
+AUD-00105,TRX-0000460,2026-01-12 18:00:00,downtime_minutes,52,23,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00106,TRX-0000585,2026-01-15 10:00:00,break_hours,94,15,Foreman 01,Rekonsiliasi log alat,Approved
+AUD-00107,TRX-0000640,2026-01-16 09:00:00,actual_production,96,79,Operations Admin,Validasi kondisi lapangan,Approved
+AUD-00108,TRX-0000091,2026-01-03 20:00:00,downtime_reason,43,91,Foreman 02,Koreksi input,Approved
+AUD-00109,TRX-0001014,2026-01-25 11:00:00,downtime_reason,47,62,Foreman 01,Validasi kondisi lapangan,Approved
+AUD-00110,TRX-0000821,2026-01-21 09:00:00,downtime_reason,21,75,Supervisor 01,Koreksi input,Approved
+AUD-00111,TRX-0000954,2026-01-24 19:00:00,actual_production,78,76,Foreman 02,Rekonsiliasi log alat,Approved
+AUD-00112,TRX-0000158,2026-01-04 15:00:00,actual_production,93,87,Operations Admin,Perbaikan reason code,Approved
+AUD-00113,TRX-0001213,2026-01-30 10:00:00,downtime_reason,65,9,Operations Admin,Rekonsiliasi log alat,Approved
+AUD-00114,TRX-0001205,2026-01-30 20:00:00,break_hours,20,99,Supervisor 01,Validasi kondisi lapangan,Returned
+AUD-00115,TRX-0000502,2026-01-13 11:00:00,downtime_reason,51,45,Foreman 01,Rekonsiliasi log alat,Pending
+AUD-00116,TRX-0000578,2026-01-15 18:00:00,actual_production,79,54,Supervisor 01,Perbaikan reason code,Approved
+AUD-00117,TRX-0000022,2026-01-01 17:00:00,break_hours,4,79,Foreman 01,Perbaikan reason code,Approved
+AUD-00118,TRX-0000492,2026-01-13 20:00:00,downtime_minutes,59,49,Operations Admin,Perbaikan reason code,Pending
+AUD-00119,TRX-0000212,2026-01-06 18:00:00,actual_production,65,26,Supervisor 01,Rekonsiliasi log alat,Pending
+AUD-00120,TRX-0001105,2026-01-27 18:00:00,downtime_minutes,53,1,Foreman 02,Rekonsiliasi log alat,Pending
