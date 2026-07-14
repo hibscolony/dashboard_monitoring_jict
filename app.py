@@ -1038,53 +1038,51 @@ alert_count = (
     .sum()
 )
 
-kpi_html = (
-    '<div class="kpi-grid">'
-    + kpi_card(
-        label="Total Boxes / Move",
-        value=f"{total_actual:,.0f}",
-        subtitle=f"{len(filtered_df):,} transaksi terfilter",
-        icon="▣",
-        accent=BLUE,
-    )
-    + kpi_card(
-        label="Target Boxes / Move",
-        value=f"{total_target:,.0f}",
-        subtitle="Target terkoreksi kondisi operasi",
-        icon="◎",
-        accent=ORANGE,
-    )
-    + kpi_card(
-        label="Pencapaian",
-        value=f"{achievement:.1f}%",
-        subtitle="Rentang review awal: 90–110%",
-        icon="↗",
-        accent=(
-            GREEN
-            if 90 <= achievement <= 110
-            else RED
+kpi_html = "".join(
+    [
+        kpi_card(
+            "Total Boxes / Move",
+            f"{total_actual:,.0f}",
+            f"{len(filtered_df):,} transaksi terfilter",
+            "▣",
+            BLUE,
         ),
-    )
-    + kpi_card(
-        label="Utilisasi",
-        value=f"{utilization:.1f}%",
-        subtitle="Jam produktif ÷ total jam shift",
-        icon="◷",
-        accent=(
-            CYAN
-            if utilization >= 80
-            else YELLOW
+        kpi_card(
+            "Target Boxes / Move",
+            f"{total_target:,.0f}",
+            "Target terkoreksi kondisi operasi",
+            "◎",
+            ORANGE,
         ),
-    )
-    + kpi_card(
-        label="Safety Alert",
-        value=f"{alert_count:,}",
-        subtitle="Segmen kerja terus-menerus > 4 jam",
-        icon="⚠",
-        accent=RED,
-    )
-    + '</div>'
+        kpi_card(
+            "Pencapaian",
+            f"{achievement:.1f}%",
+            "Rentang review awal: 90–110%",
+            "↗",
+            GREEN if 90 <= achievement <= 110 else RED,
+        ),
+        kpi_card(
+            "Utilisasi",
+            f"{utilization:.1f}%",
+            "Jam produktif ÷ total jam shift",
+            "◷",
+            CYAN if utilization >= 80 else YELLOW,
+        ),
+        kpi_card(
+            "Safety Alert",
+            f"{alert_count:,}",
+            "Segmen kerja terus-menerus > 4 jam",
+            "⚠",
+            RED,
+        ),
+    ]
 )
+
+st.markdown(
+    f'<div class="kpi-grid">{kpi_html}</div>',
+    unsafe_allow_html=True,
+)
+
 
 st.markdown(
     f'<div class="kpi-grid">{kpi_html}</div>',
