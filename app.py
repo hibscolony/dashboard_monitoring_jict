@@ -1086,8 +1086,6 @@ kpi_html = (
     + '</div>'
 )
 
-st.html(kpi_html)
-
 st.markdown(
     f'<div class="kpi-grid">{kpi_html}</div>',
     unsafe_allow_html=True,
