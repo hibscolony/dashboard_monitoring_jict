@@ -1083,13 +1083,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
-st.markdown(
-    f'<div class="kpi-grid">{kpi_html}</div>',
-    unsafe_allow_html=True,
-)
-
-
 # ============================================================
 # TABLES
 # ============================================================
